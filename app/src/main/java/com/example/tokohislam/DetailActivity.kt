@@ -34,8 +34,8 @@ class DetailActivity : AppCompatActivity(), View.OnClickListener {
             R.id._btnshare -> {
                 val share = Intent(Intent.ACTION_SEND)
                 share.type = "text/plain"
-                share.putExtra(Intent.EXTRA_SUBJECT, "Ini Bahasa Pemograman")
-                share.putExtra(Intent.EXTRA_TEXT, "Bahasa Pemograman")
+                share.putExtra(Intent.EXTRA_SUBJECT, "Tokoh Islam")
+                share.putExtra(Intent.EXTRA_TEXT, "https://id.wikipedia.org/wiki/Daftar_tokoh_Islam")
                 startActivity(Intent.createChooser(share, "Share Link !"))
             }
         }
